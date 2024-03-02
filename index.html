@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -16,17 +16,108 @@
 
 <body>
     <!-- header start -->
-    <header></header>
+    <header class="container mx-auto mt-8">
+        <!-- navbar start -->
+        <div class="navbar flex flex-col lg:flex-row bg-base-100">
+            <div class="flex-1">
+                <img src="./logo/logo.png" alt="">
+            </div>
+            <div class="flex-none">
+                <div class="dropdown dropdown-end mt-2 lg:mt-0">
+                    <div class="flex gap-4">
+                        <div class="w-10 rounded-full bg-[#12132D05] border-2 border-[#0307121A] p-2">
+                            <img alt="home" src="./logo/home.png" />
+                        </div>
+
+
+                        <div class="w-10 rounded-full bg-[#12132D05] border-2 border-[#0307121A] p-2">
+                            <img alt="pen" src="./logo/pen.png" />
+                        </div>
+
+
+                        <div class="w-10 rounded-full bg-[#12132D05] border-2 border-[#0307121A] p-2">
+                            <img alt="friend" src="./logo/friend.png" />
+                        </div>
+
+
+                        <div class="w-10 rounded-full bg-[#12132D05] border-2 border-[#0307121A] p-2 ">
+                            <img alt="pages" src="./logo/pages.png" />
+                        </div>
+
+                        <div>
+                            <button class="py-3 px-5 bg-[#7D7DFC] rounded-[50px] font-bold text-white">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar end -->
+    </header>
     <!-- header end -->
 
 
     <!-- main start -->
-    <main></main>
+    <main class="container mx-auto">
+        <!-- lets discuss start -->
+        <div>
+            <h1 class="text-3xl font-extrabold text-center mt-12">Let’s Discuss</h1>
+            <p class="mt-4 text-center">Yes, you can run unit tests and view the results directly within the app. The
+                <br>integrated testing features allow for a streamlined .
+            </p>
+
+            <div>
+                <div class="card  bg-[#F3F3F5] text-black p-7">
+                    <div>
+                        <!-- avater start -->
+                        <div class="avatar online">
+                            <div class="w-24 rounded-full">
+                              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"/>
+                            </div>
+                          </div>
+                          <div class="avatar offline hidden">
+                            <div class="w-24 rounded-full">
+                              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            </div>
+                          </div>
+                        <!-- avater end -->
+                    </div>
+
+                    <div>
+                        <div class="flex">
+                            <p>#Music</p>
+                            <p>Author : Safia Chowdhury</p>
+                        </div>
+
+                        <div class="w-[596px] border-b-2 border-dashed border-[#12132D40]">
+                            <h3>10 Kids Unaware of Their Halloween Costume</h3>
+                            <p class="mt-3">It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your prerogative</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- lets discuss end -->
+    </main>
     <!-- main end -->
 
 
     <!-- footer start -->
-    <footer></footer>
+    <footer class="footer footer-center p-10 py-20 bg-gray-100">
+        <aside>
+            <img src="./logo/logo.png" alt="">
+            <p>Here You Can Find Music,Comedy Video, Learning Videso.Now <br>You Decide What You Need Exactly.</p>
+        </aside>
+        <nav>
+            <div class="grid grid-flow-col gap-4">
+                <i class="fa-brands fa-twitter fa-lg" style="color: #000000;"></i>
+                <i class="fa-brands fa-facebook fa-lg" style="color: #000000;"></i>
+                <i class="fa-brands fa-instagram fa-lg" style="color: #000000;"></i>
+                <i class="fa-brands fa-github fa-lg" style="color: #000000;"></i>
+            </div>
+        </nav>
+        <hr class="w-[280px] lg:w-[1170px] border-1 border-x border-[#30325E1A]">
+        <p>Copyright © 2024 - All right reserved</p>
+    </footer>
     <!-- footer end -->
 
     <!-- javascript linked -->
