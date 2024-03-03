@@ -18,51 +18,100 @@
     <!-- header start -->
     <header class="container mx-auto mt-8">
         <!-- navbar start -->
-        <div class="navbar flex flex-col lg:flex-row bg-base-100">
-            <div class="flex-1">
-                <img src="./logo/logo.png" alt="">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start lg:hidden">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-16 space-y-2">
+                        <li>
+                            <button type="button"
+                                class="btn w-12  bg-[#12132D08] border border-[#0307121A] rounded-full"
+                                data-toggle="tooltip" data-placement="top" title="Home">
+                                <i class="fa-solid fa-house" style="color: #000000;"></i>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button type="button"
+                                class="btn w-12 bg-[#12132D08] border border-[#0307121A] rounded-full"
+                                data-toggle="tooltip" data-placement="top" title="Write">
+                                <i class="fa-solid fa-pen" style="color: #000000;"></i>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button type="button"
+                                class="btn w-12 bg-[#12132D08] border border-[#0307121A] rounded-full"
+                                data-toggle="tooltip" data-placement="top" title="Add">
+                                <i class="fa-solid fa-user" style="color: #000000;"></i>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button type="button"
+                                class="btn w-12 bg-[#12132D08] border border-[#0307121A] rounded-full"
+                                data-toggle="tooltip" data-placement="top" title="Feedback">
+                                <i class="fa-solid fa-flag" style="color: #000000;"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="flex-none">
-                <div class="dropdown dropdown-end mt-2 lg:mt-0">
-                    <div class="flex gap-4">
-                        <div class="w-10 rounded-full bg-[#12132D05] border-2 border-[#0307121A] p-2">
-                            <img alt="home" src="./logo/home.png" />
-                        </div>
 
-
-                        <div class="w-10 rounded-full bg-[#12132D05] border-2 border-[#0307121A] p-2">
-                            <img alt="pen" src="./logo/pen.png" />
-                        </div>
-
-
-                        <div class="w-10 rounded-full bg-[#12132D05] border-2 border-[#0307121A] p-2">
-                            <img alt="friend" src="./logo/friend.png" />
-                        </div>
-
-
-                        <div class="w-10 rounded-full bg-[#12132D05] border-2 border-[#0307121A] p-2 ">
-                            <img alt="pages" src="./logo/pages.png" />
-                        </div>
-
-                        <div>
-                            <button class="py-3 px-5 bg-[#7D7DFC] rounded-[50px] font-bold text-white">Sign In</button>
-                        </div>
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <h1 class="text-[#12132D] text-4xl leading-10 font-black">ReTro</h1>
                     </div>
                 </div>
+            </div>
+
+            <div class="navbar-end space-x-4">
+                <button type="button" class="btn hidden lg:inline bg-[#12132D08] border border-[#0307121A] rounded-full"
+                    data-toggle="tooltip" data-placement="top" title="Home">
+                    <i class="fa-solid fa-house" style="color: #000000;"></i>
+                </button>
+
+                <button type="button" class="btn hidden lg:inline bg-[#12132D08] border border-[#0307121A] rounded-full"
+                    data-toggle="tooltip" data-placement="top" title="Write">
+                    <i class="fa-solid fa-pen" style="color: #000000;"></i>
+                </button>
+
+                <button type="button" class="btn hidden lg:inline bg-[#12132D08] border border-[#0307121A] rounded-full"
+                    data-toggle="tooltip" data-placement="top" title="Add">
+                    <i class="fa-solid fa-user" style="color: #000000;"></i>
+                </button>
+
+                <button type="button" class="btn hidden lg:inline bg-[#12132D08] border border-[#0307121A] rounded-full"
+                    data-toggle="tooltip" data-placement="top" title="Feedback">
+                    <i class="fa-solid fa-flag" style="color: #000000;"></i>
+                </button>
+
+                <button class="btn bg-[#7D7DFC] text-white rounded-3xl text-xl font-semibold px-7">Sign In</button>
             </div>
         </div>
         <!-- navbar end -->
 
         <!-- nav banner start -->
-        <div class="bg-[#12132D] rounded-2xl flex flex-col lg:flex-row justify-between p-8 lg:p-20">
+        <div
+            class="bg-[#12132D] relative lg:w-[1170px] mx-auto rounded-3xl flex flex-col lg:flex-row justify-between p-8 lg:p-20">
             <div>
                 <h1 class="text-4xl lg:text-6xl font-black lg:leading-[80px] text-white">Welcome to the <br> <span
                         class="text-[#7A7DFC]">ReTro</span> Forum</h1>
                 <p class="text-xl font-medium leading-9 text-[#FFFFFFCC]">Share your favorite opinion and win and wp
-                    <br>forum coffee mug!</p>
+                    <br>forum coffee mug!
+                </p>
                 <div class="relative items-center">
-                    <input class="px-4 font-medium leading-5 text-[#03071280] mt-4 w-[320px] lg:w-[400px] h-[56px] rounded-3xl" type="text"
-                        placeholder="search here anything">
+                    <input
+                        class="px-4 font-medium leading-5 text-[#03071280] mt-4 w-[320px] lg:w-[400px] h-[56px] rounded-3xl"
+                        type="text" placeholder="search here anything">
                     <button
                         class="btn absolute top-5 right-3 lg:right-[72px] rounded-3xl border-none px-8 bg-[#7D7DFC] text-xl font-bold leading-6 text-white">Search</button>
                 </div>
@@ -73,21 +122,25 @@
                     <p class="font-medium text-2xl leading-7 text-[#12132DCC]">Registered Users</p>
                     <p class="font-medium text-2xl leading-7 text-[#12132DCC]">01</p>
                 </div>
-                
+
                 <div class="flex justify-between">
                     <p class="font-medium text-2xl leading-7 text-[#12132DCC]">Forum</p>
                     <p class="font-medium text-2xl leading-7 text-[#12132DCC]">05</p>
                 </div>
-                
+
                 <div class="flex justify-between">
                     <p class="font-medium text-2xl leading-7 text-[#12132DCC]">Topics</p>
                     <p class="font-medium text-2xl leading-7 text-[#12132DCC]">01</p>
                 </div>
-                
+
                 <div class="flex justify-between">
                     <p class="font-medium text-2xl leading-7 text-[#12132DCC]">Replies</p>
                     <p class="font-medium text-2xl leading-7 text-[#12132DCC]">01</p>
                 </div>
+            </div>
+
+            <div class="absolute right-0 bottom-0 object-cover">
+                <img src="./background/bgbanner.png" alt="">
             </div>
         </div>
         <!-- nav banner end -->
