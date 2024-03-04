@@ -14,6 +14,9 @@ const displayLetsData = async (letsData) => {
     const discussContainer = document.getElementById('discuss-container');
     discussContainer.textContent = '';
 
+    let store = [];
+    console.log(store);
+
     letsData.forEach((lets) => {
         // console.log(lets);
 
@@ -62,10 +65,11 @@ const displayLetsData = async (letsData) => {
             </div>
         `;
         discussContainer.appendChild(letsCard);
-        
+        store.push(lets);
     });
     // hide loading spiner
     toggleLoadingSpiner(false);
+    
 };
 
 const clickAdd = async () => {
