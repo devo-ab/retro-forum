@@ -7,7 +7,7 @@ const loadLets = async (searchText = '') => {
     displayLetsData(letsData);
 };
 
-const displayLetsData = async (letsData,) => {
+const displayLetsData = async (letsData) => {
     // console.log(letsData);
 
     // get the container
@@ -62,8 +62,8 @@ const displayLetsData = async (letsData,) => {
             </div>
         `;
         discussContainer.appendChild(letsCard);
+        
     });
-
     // hide loading spiner
     toggleLoadingSpiner(false);
 };
